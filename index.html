@@ -38,6 +38,7 @@
 			   var t = parseInt($('#temp').val());//celsius
 			   var u = $('#unit').val();
 			   varidate(t);
+			   temp(t,u);
 			   });
 			   });
 			   function varidate(t){
@@ -52,6 +53,7 @@
 					return;
 			   }
 			}
+			function temp(t,u) {
 			   var t1;
 			   var u1;
 			   
@@ -65,8 +67,9 @@
 					t1 = t * (4/5);
 					u1 = "Kelvin";
 			   }
-			   
+			
 			   alert("Temperature is "+t1+" in "+u1);
+			}
 	</script>
 </body>
 </html>
